@@ -1,0 +1,51 @@
+#Comandos uteis do Git
+#Entrar criar e entrar na pasta e arquivos que vai conter os arquivos do Git
+
+git config --global user.name "usuario" # configura o usuário global do Git
+git config --global user.mail "e-mail" # configura o e-mail
+
+
+git init . # inicializa um repositório dentro da pasta
+git status # status do repositório
+
+git add "arquivo" # adiciona o arquivo para o commit do projeto (unstage)
+git rm --cached "arquivo" # remove o arquivo que estava em modo unstage
+
+git commit # abre um editor de texto onde colocamos uma msg do que vai ser commitado
+# OU
+git commit -m "menssagem"  # dar um commit sem precisar abrir um editor de texto para menssagem 
+git commit -am "menssagem" # a modificação do arquivo no unstage, dar um commit e adiciona a menssagem
+
+#Padrão para as menssagens do commit
+#chore: pequena tarefa
+#fix: correções
+#feat: inclusão de funcionalidades
+#docs: atualizacao de documentação
+
+git log # mostra os logs dos commits
+git log -n "numero"  # mostra a quantidade dos ultimos logos
+git log --online # mostra os logs de forma resumida
+git log --stat # mostra os arquivos que foram editados nos commits
+
+git checkout "idcommit"  # navegar entre dos commits e branchs para a versão do histórico
+git revert HEAD "idcommit" # reverte a versão do commit, abre um arquivo de texto para registrar o commit
+
+git branch # mostra as branchs
+git branch "nomebranch" # cria uma branch
+git branch "novabrach" "branch" # cria uma branch com o conteúdo de uma já existente
+git branch -b "nomebrach" # cria um novo branch e muda para o brach criado
+git branch -D "nomebranch" # remove uma branch
+
+git push # envia os arquivos para o github 
+git pull # baixa modificações do projeto
+git pus origin "pasta/arquivo" # cria uma nova branch no github
+git clone "link" # baixa o repositorio
+
+
+
+
+
+
+
+
+
