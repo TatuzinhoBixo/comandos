@@ -1,0 +1,5 @@
+#Comandos referentes ao Jboss
+
+./bin/standalone.sh --version # Para saber a versão do Jboss, rodar na pasta de instalação
+
+
